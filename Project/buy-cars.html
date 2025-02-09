@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Cars - Car Specialist</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="./images/homepage/logo.webp" alt="Logo" href="index.html">
+                <span class="logo-text" href="index.html">CarSpecialist</span>
+            </div>
+
+            <ul class="nav-links">
+                <li class="dropdown">
+                    <a href="#">New Cars</a>
+                    <div class="dropdown-content">
+                        <a href="#">Hatchbacks</a>
+                        <a href="#">Sedans</a>
+                        <a href="#">SUVs</a>
+                        <a href="#">Luxury Cars</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="buy-cars.html" class="active">Buy Used Cars</a>
+                    <div class="dropdown-content">
+                        <a href="#">By Budget</a>
+                        <a href="#">By Brand</a>
+                        <a href="#">By Year</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#sell">Sell Car</a>
+                    <div class="dropdown-content">
+                        <a href="#">Sell Now</a>
+                        <a href="#">Car Valuation</a>
+                        <a href="#">Tips for Sellers</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#garages">Nearby Garages</a>
+                    <div class="dropdown-content">
+                        <a href="#">Mechanics</a>
+                        <a href="#">Car Wash</a>
+                        <a href="#">Repair Services</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#spare-parts">Spare Parts</a>
+                    <div class="dropdown-content">
+                        <a href="#">Tires</a>
+                        <a href="#">Batteries</a>
+                        <a href="#">Brakes</a>
+                        <a href="#">Accessories</a>
+                    </div>
+                </li>
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="#login-register">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="search-container">
+        <select id="brand">
+            <option value="">Select Brand</option>
+            <option value="Maruti Suzuki">Maruti Suzuki</option>
+            <option value="Hyundai">Hyundai</option>
+            <option value="Honda">Honda</option>
+            <option value="Toyota">Toyota</option>
+            <option value="Ford">Ford</option>
+        </select>
+    
+        <input type="number" id="max-price" placeholder="Max Price (₹)">
+    
+        <select id="location">
+            <option value="">Select City</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Bangalore">Bangalore</option>
+            <option value="Hyderabad">Hyderabad</option>
+        </select>
+    
+        <button id="search-btn">Search</button>
+    </div>
+
+    <section id="car-list">
+        <!-- Maruti Cars -->
+        <div class="car-card" data-brand="Maruti" data-price="400000" data-location="Delhi">
+            <img src="alto.jpg" alt="Maruti Alto">
+            <h3>Maruti Alto 800</h3>
+            <p>₹4,00,000 - Delhi</p>
+        </div>
+
+        <div class="car-card" data-brand="Maruti" data-price="600000" data-location="Mumbai">
+            <img src="swift.jpg" alt="Maruti Swift">
+            <h3>Maruti Swift</h3>
+            <p>₹6,00,000 - Mumbai</p>
+        </div>
+
+        <div class="car-card" data-brand="Maruti" data-price="750000" data-location="Bangalore">
+            <img src="dzire.jpg" alt="Maruti Dzire">
+            <h3>Maruti Dzire</h3>
+            <p>₹7,50,000 - Bangalore</p>
+        </div>
+
+        <div class="car-card" data-brand="Maruti" data-price="850000" data-location="Chennai">
+            <img src="baleno.jpg" alt="Maruti Baleno">
+            <h3>Maruti Baleno</h3>
+            <p>₹8,50,000 - Chennai</p>
+        </div>
+
+        <div class="car-card" data-brand="Maruti" data-price="500000" data-location="Kolkata">
+            <img src="wagonr.jpg" alt="Maruti Wagon R">
+            <h3>Maruti Wagon R</h3>
+            <p>₹5,00,000 - Kolkata</p>
+        </div>
+
+        <!-- Hyundai Cars -->
+        <div class="car-card" data-brand="Hyundai" data-price="700000" data-location="Mumbai">
+            <img src="verna.jpg" alt="Hyundai Verna">
+            <h3>Hyundai Verna</h3>
+            <p>₹7,00,000 - Mumbai</p>
+        </div>
+
+        <div class="car-card" data-brand="Hyundai" data-price="550000" data-location="Pune">
+            <img src="i20.jpg" alt="Hyundai i20">
+            <h3>Hyundai i20</h3>
+            <p>₹5,50,000 - Pune</p>
+        </div>
+
+        <div class="car-card" data-brand="Hyundai" data-price="1100000" data-location="Hyderabad">
+            <img src="creta.jpg" alt="Hyundai Creta">
+            <h3>Hyundai Creta</h3>
+            <p>₹11,00,000 - Hyderabad</p>
+        </div>
+
+        <div class="car-card" data-brand="Hyundai" data-price="650000" data-location="Delhi">
+            <img src="aura.jpg" alt="Hyundai Aura">
+            <h3>Hyundai Aura</h3>
+            <p>₹6,50,000 - Delhi</p>
+        </div>
+
+        <div class="car-card" data-brand="Hyundai" data-price="900000" data-location="Bangalore">
+            <img src="tucson.jpg" alt="Hyundai Tucson">
+            <h3>Hyundai Tucson</h3>
+            <p>₹9,00,000 - Bangalore</p>
+        </div>
+
+        <!-- Honda Cars -->
+        <div class="car-card" data-brand="Honda" data-price="950000" data-location="Chennai">
+            <img src="city.jpg" alt="Honda City">
+            <h3>Honda City</h3>
+            <p>₹9,50,000 - Chennai</p>
+        </div>
+
+        <div class="car-card" data-brand="Honda" data-price="800000" data-location="Delhi">
+            <img src="jazz.jpg" alt="Honda Jazz">
+            <h3>Honda Jazz</h3>
+            <p>₹8,00,000 - Delhi</p>
+        </div>
+
+        <div class="car-card" data-brand="Honda" data-price="1200000" data-location="Bangalore">
+            <img src="crv.jpg" alt="Honda CR-V">
+            <h3>Honda CR-V</h3>
+            <p>₹12,00,000 - Bangalore</p>
+        </div>
+
+        <div class="car-card" data-brand="Honda" data-price="700000" data-location="Pune">
+            <img src="amaze.jpg" alt="Honda Amaze">
+            <h3>Honda Amaze</h3>
+            <p>₹7,00,000 - Pune</p>
+        </div>
+
+        <!-- Tata Cars -->
+        <div class="car-card" data-brand="Tata" data-price="650000" data-location="Mumbai">
+            <img src="nexon.jpg" alt="Tata Nexon">
+            <h3>Tata Nexon</h3>
+            <p>₹6,50,000 - Mumbai</p>
+        </div>
+
+        <div class="car-card" data-brand="Tata" data-price="900000" data-location="Hyderabad">
+            <img src="harrier.jpg" alt="Tata Harrier">
+            <h3>Tata Harrier</h3>
+            <p>₹9,00,000 - Hyderabad</p>
+        </div>
+
+        <div class="car-card" data-brand="Tata" data-price="450000" data-location="Delhi">
+            <img src="tiago.jpg" alt="Tata Tiago">
+            <h3>Tata Tiago</h3>
+            <p>₹4,50,000 - Delhi</p>
+        </div>
+
+        <div class="car-card" data-brand="Tata" data-price="1200000" data-location="Kolkata">
+            <img src="safari.jpg" alt="Tata Safari">
+            <h3>Tata Safari</h3>
+            <p>₹12,00,000 - Kolkata</p>
+        </div>
+
+        <!-- Mahindra Cars -->
+        <div class="car-card" data-brand="Mahindra" data-price="950000" data-location="Kolkata">
+            <img src="scorpio.jpg" alt="Mahindra Scorpio">
+            <h3>Mahindra Scorpio</h3>
+            <p>₹9,50,000 - Kolkata</p>
+        </div>
+
+        <div class="car-card" data-brand="Mahindra" data-price="1500000" data-location="Chennai">
+            <img src="xuv500.jpg" alt="Mahindra XUV500">
+            <h3>Mahindra XUV500</h3>
+            <p>₹15,00,000 - Chennai</p>
+        </div>
+
+        <div class="car-card" data-brand="Mahindra" data-price="700000" data-location="Pune">
+            <img src="thar.jpg" alt="Mahindra Thar">
+            <h3>Mahindra Thar</h3>
+            <p>₹7,00,000 - Pune</p>
+        </div>
+
+        <div class="car-card" data-brand="Mahindra" data-price="1200000" data-location="Delhi">
+            <img src="bolero.jpg" alt="Mahindra Bolero">
+            <h3>Mahindra Bolero</h3>
+            <p>₹12,00,000 - Delhi</p>
+        </div>
+
+        <!-- Toyota Cars -->
+        <div class="car-card" data-brand="Toyota" data-price="1800000" data-location="Mumbai">
+            <img src="fortuner.jpg" alt="Toyota Fortuner">
+            <h3>Toyota Fortuner</h3>
+            <p>₹18,00,000 - Mumbai</p>
+        </div>
+
+        <div class="car-card" data-brand="Toyota" data-price="1000000" data-location="Delhi">
+            <img src="innova.jpg" alt="Toyota Innova">
+            <h3>Toyota Innova</h3>
+            <p>₹10,00,000 - Delhi</p>
+        </div>
+
+        <div class="car-card" data-brand="Toyota" data-price="750000" data-location="Bangalore">
+            <img src="glanza.jpg" alt="Toyota Glanza">
+            <h3>Toyota Glanza</h3>
+            <p>₹7,50,000 - Bangalore</p>
+        </div>
+
+        <div class="car-card" data-brand="Toyota" data-price="900000" data-location="Hyderabad">
+            <img src="camry.jpg" alt="Toyota Camry">
+            <h3>Toyota Camry</h3>
+            <p>₹9,00,000 - Hyderabad</p>
+        </div>
+
+    </section>
+
+    <script src="buy-cars-script.js"></script>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Car Specialist</h3>
+                <p>Welcome to Car Specialist, your trusted platform for buying, selling, and maintaining cars. We provide a seamless, transparent, and customer-friendly experience.</p>
+            </div>
+    
+            <div class="footer-section">
+                <h3>Our Services</h3>
+                <ul>
+                    <li><a href="#">New & Used Car Sales</a></li>
+                    <li><a href="#">Car Selling Assistance</a></li>
+                    <li><a href="#">Nearby Garages</a></li>
+                    <li><a href="#">Spare Parts Marketplace</a></li>
+                    <li><a href="#">Latest Car Updates</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section">
+                <h3>Why Choose Us?</h3>
+                <ul>
+                    <li>✔ Wide Selection of Vehicles</li>
+                    <li>✔ Verified & Trusted Sellers</li>
+                    <li>✔ Hassle-Free Transactions</li>
+                    <li>✔ Expert Automotive Guidance</li>
+                    <li>✔ Financing & Insurance Support</li>
+                </ul>
+            </div>
+    
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>📍 Address: [Your Company Address]</p>
+                <p>📞 Phone: [Your Contact Number]</p>
+                <p>📧 Email: [Your Email Address]</p>
+                <p>🌐 Website: [Your Website URL]</p>
+    
+                <div class="contact-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; 2025 CarSpecialist. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
